@@ -97,6 +97,29 @@ class ViewController: UIViewController {
         present(alertController, animated: true)
     }
     
+    private func showAlertWithTextField() {
+        let alertController = UIAlertController(title: "Tag", message: "Add new tag", preferredStyle: .alert)
+        
+        let addAction = UIAlertAction(title: "Add", style: .default) { _ in
+            if let textField = alertController.textFields?.first,
+               let text = textField.text {
+                print("Text -> \(text)")
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { _ in
+            print("User click fourth cancel botton")
+        }
+        
+        alertController.addTextField { textField in
+            textField.placeholder = "Tag"
+        }
+        
+        alertController.addAction(addAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true)
+    }
     
     // MARK: - Actions
     @IBAction func buttonAction1(_ sender: UIButton) {
@@ -115,8 +138,8 @@ class ViewController: UIViewController {
         showAlertWithThreeButton()
     }
     
-    
     @IBAction func buttonAction5(_ sender: UIButton) {
+        showAlertWithTextField()
     }
 }
 
