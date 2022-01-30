@@ -75,6 +75,28 @@ class ViewController: UIViewController {
         present(alertController, animated: true)
     }
     
+    private func showAlertWithThreeButton() {
+        let alertController = UIAlertController(title: "Alert", message: "Alert with more than 2 botton", preferredStyle: .alert)
+        
+        let defaultAction = UIAlertAction(title: "Default", style: .default) { _ in
+            print("User click default botton")
+        }
+        
+        let destructiveAction = UIAlertAction(title: "Destructive", style: .destructive) { _ in
+            print("User click destructive botton")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { _ in
+            print("User click third cancel botton")
+        }
+        
+        alertController.addAction(defaultAction)
+        alertController.addAction(destructiveAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true)
+    }
+    
     
     // MARK: - Actions
     @IBAction func buttonAction1(_ sender: UIButton) {
@@ -90,6 +112,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonAction4(_ sender: UIButton) {
+        showAlertWithThreeButton()
     }
     
     
