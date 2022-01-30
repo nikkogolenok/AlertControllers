@@ -14,8 +14,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    // MARK: - Methods
+    private func showSimpleAlertController() {
+        let alertController = UIAlertController(title: "Sing out", message: "You can always access your content by signing back in", preferredStyle: .alert)
+        
+        let singOutAction = UIAlertAction(title: "Sing out", style: .default) { _ in }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { _ in }
+        
+        alertController.addAction(singOutAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true)
+    }
+    
+    
     // MARK: - Actions
     @IBAction func buttonAction1(_ sender: UIButton) {
+        showSimpleAlertController()
     }
     
     @IBAction func buttonAction2(_ sender: UIButton) {

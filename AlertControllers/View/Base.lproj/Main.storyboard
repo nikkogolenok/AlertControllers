@@ -26,7 +26,7 @@
                                             <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="simpleAlertController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WnD-nU-TTK"/>
+                                            <action selector="buttonAction1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dF-rA-9r7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SB-Dz-9zF">
@@ -36,7 +36,7 @@
                                             <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="simpleAlertSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm2-hu-dYM"/>
+                                            <action selector="buttonAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BmY-H8-Ctx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLU-2T-MaL">
@@ -46,7 +46,7 @@
                                             <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="alertDictractiveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2U2-ph-ngf"/>
+                                            <action selector="buttonAction3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F9H-on-Z3y"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQI-zP-xUa">
@@ -56,7 +56,7 @@
                                             <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="buttonAction4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sKj-XR-hZm"/>
+                                            <action selector="buttonAction4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HTd-pf-gmX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAS-wU-iIh">
@@ -66,7 +66,7 @@
                                             <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="buttonAction5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZxA-tw-gvU"/>
+                                            <action selector="buttonAction5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xud-Ye-0C8"/>
                                         </connections>
                                     </button>
                                 </subviews>
