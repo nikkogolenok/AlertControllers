@@ -58,6 +58,23 @@ class ViewController: UIViewController {
         present(alertController, animated: true)
     }
     
+    private func showAlertWithDistructiveButton() {
+        let alertController = UIAlertController(title: "Sing Out", message: "You can always access your content by signing back in", preferredStyle: .alert)
+        
+        let signOutAction = UIAlertAction(title: "Sign Out", style: .default) { _ in
+            print("User click second sing out botton")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { _ in
+            print("User click second cancel botton")
+        }
+        
+        alertController.addAction(signOutAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true)
+    }
+    
     
     // MARK: - Actions
     @IBAction func buttonAction1(_ sender: UIButton) {
@@ -69,6 +86,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonAction3(_ sender: UIButton) {
+        showAlertWithDistructiveButton()
     }
     
     @IBAction func buttonAction4(_ sender: UIButton) {
